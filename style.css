@@ -4,14 +4,15 @@ head, body {
     rgba(0, 0, 0, 0.5) 25%,
     rgba(0, 0, 0, 0.6) 30%,
     rgba(0, 0, 0, 0.8) 60%,
-    rgba(20, 20, 20, 1) 100%), 
+    rgba(0, 0, 0, 1) 100%), 
     url(https://assets.nflxext.com/ffe/siteui/vlv3/12cedf4e-d9cf-4a31-b80f-7e6fbe4ef998/web/ID-en-20261109-TRIFECTA-perspective_f293db42-d9a0-4350-9592-edcfd4bf77fc_large.jpg);
+    background-color: black;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     width: 100%;
     height: 100vh;
     margin: 0;
-    overflow: hidden; /*biar ga ada skrol di halaman utama*/
+    /* overflow: hidden; biar ga ada skrol di halaman utama */
 
     background-size: cover;
     background-position: center;
@@ -26,6 +27,7 @@ head, body {
     padding: 0px 3px 0px 3px;
     padding-bottom: 3px;
     align-items: center;
+    overflow-y: scroll;
 }
 
 .nav-left {
@@ -68,7 +70,7 @@ head, body {
     background-color: transparent;
     border: 1px solid #4c4c4c;
     border-radius: 5px;
-    width: 218px;
+    width: 190px;
     height: 32px;
     justify-content: center;
     align-items: center;
@@ -84,7 +86,71 @@ head, body {
     color: white;
     align-items: center;
     overflow: hidden;
-    width: 180px;
+    width: 150px;
     height: 32px;
 }
 
+
+/* bagian main-contain kita  */
+.hero-section {
+    background-color: transparent;
+    text-align: center;
+    padding: 160px 0px 160px 0px;
+}
+
+.hero-section h1 {
+    font-size: 55px;
+    margin: 0;
+}
+
+.hero-section span {
+    display: flex;
+    background-color: transparent;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+.email-get-start {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 8px;
+}
+
+.email-get-start input {
+    background-color: transparent;
+    font-size: 16px;
+    width: 360px;
+    height: 50px;
+    border: 1px solid #b2b2b2;
+    border-radius: 5px;
+    padding-left: 20px;
+    align-items: center;
+}
+
+input::placeholder {
+    color: #b2b2b2;
+    opacity: 1;
+}
+
+.btn-get-started {
+    display: flex;
+    background-color: red;
+    padding: 5px 30px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 22px;
+    color: white;
+    text-decoration: none;
+    padding-top: 12px;
+    padding-bottom: 18px;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.30s ease-in;
+}
+
+.btn-get-started:hover {
+    background-color: rgb(201, 3, 3);
+}
