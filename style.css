@@ -154,3 +154,51 @@ input::placeholder {
 .btn-get-started:hover {
     background-color: rgb(201, 3, 3);
 }
+
+.trending-card-container{
+    background: linear-gradient(to bottom, rgba(37, 8, 30, 0.8), #141414);
+    border-top-left-radius: 60% 20px; /*buat efek lengkung di borernya bagian kiri*/
+    border-top-right-radius: 60% 20px; /*buat efek lengkung di bordernya bagian kanan*/
+    border-top: 5px solid 
+    rgba(228, 7, 7, 0.9); /* Garis tepi melengkung warna merah/pink khas Netflix */
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.trending-card-container h2 {
+    display: flex;
+    margin-left: 150px;
+}
+
+.film-card-container {
+    display: flex;
+    border: 0;
+    margin-left: 180px;
+    margin-right: 100px;
+    gap: 30px;
+}
+
+.flim-card {
+    display: flex;
+    background-color: #4c4c4c;
+    width: 185px;
+    height: 33vh;
+    border: none;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4px;
+    cursor: pointer;
+    transition: transform 0.20s ease;
+}
+
+.flim-card:hover {
+    transform: scale(1.05);
+}
+
+.img-film-card {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
