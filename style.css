@@ -156,11 +156,12 @@ input::placeholder {
 }
 
 .trending-card-container{
-    background: linear-gradient(to bottom, rgba(37, 8, 30, 0.8), #141414);
+    background: linear-gradient(to bottom, 
+    rgb(43, 2, 32) 5%,
+    rgba(23, 28, 103, 0) 100%);
     border-top-left-radius: 60% 20px; /*buat efek lengkung di borernya bagian kiri*/
     border-top-right-radius: 60% 20px; /*buat efek lengkung di bordernya bagian kanan*/
-    border-top: 5px solid 
-    rgba(228, 7, 7, 0.9); /* Garis tepi melengkung warna merah/pink khas Netflix */
+    border-top: 5px solid rgba(240, 0, 80, 0.9); /* Garis tepi melengkung warna merah/pink khas Netflix */
     padding-top: 40px;
     padding-bottom: 40px;
 }
@@ -201,4 +202,78 @@ input::placeholder {
     height: 100%;
     object-fit: cover;
     border-radius: 8px;
+}
+
+/* bagian infois netflix  */
+.info-join-netflix-container {
+    padding-bottom: 40px;
+    margin-top: 50px;
+}
+
+.h2-judul-info {
+    margin-left: 150px;
+}
+
+.info-continer-netflix {
+    margin-left: 150px;
+    margin-right: 180px;
+    display: flex;
+    gap: 15px;
+}
+
+.info-netflix-box {
+    background: linear-gradient(to bottom,
+    rgba(58, 91, 254, 0.232) 30%,
+    rgba(178, 5, 149, 0.209) 100%);
+    width: 50%;
+    height: 35vh;
+    border: none;
+    border-radius: 18px;
+    padding: 15px;
+}
+
+.info-netflix-box span {
+    color: #c3c3c3;
+}
+
+/* bagian faq-section ni  */
+.faq-section-box {
+    display: flex;
+    background-color: #333333;
+    /* width: 50%;
+    height: 50px; */
+    padding: 10px 20px;
+    font-size: 25px;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.35s ease-in-out;
+    
+}
+
+.faq-section-box:hover {
+    background-color: #4c4c4c;
+}
+
+.icon-plus-faq {
+    font-size: 60px;
+}
+
+.faq-section-info {
+    color: white;
+    text-decoration: none;
+}
+
+.container-faq-section {
+    display: grid;
+    margin: none;
+    gap: 8px;
+}
+
+.faq-section-container {
+    padding: 0 150px;
+    margin-right: 30px;
+    flex-direction: column;
+    padding-bottom: 40px;
 }
