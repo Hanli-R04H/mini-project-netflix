@@ -109,6 +109,7 @@ head, body {
     align-items: center;
     justify-content: center;
     margin-top: 40px;
+    padding-bottom: 18px;
 }
 .email-get-start {
     align-items: center;
@@ -164,7 +165,7 @@ input::placeholder {
     border-top-right-radius: 80% 50px; /*buat efek lengkung di bordernya bagian kanan*/
     border-top: 5px solid rgba(240, 0, 80, 0.9); /* Garis tepi melengkung warna merah/pink khas Netflix */
     padding-top: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 10px;
 }
 
 .trending-card-container h2 {
@@ -176,8 +177,18 @@ input::placeholder {
     display: flex;
     border: 0;
     margin-left: 180px;
-    margin-right: 100px;
+    margin-right: 190px;
     gap: 30px;
+    flex-wrap: nowrap; /* PENTING: Mencegah poster turun ke bawah */
+    overflow-x: auto; /*untuk Scrol Ke samping*/
+    scroll-behavior: smooth; /*supaya smoot skrolnya*/
+    padding: 10px;
+}
+
+
+/* Sembunyikan scrollbar bawaan browser biar keliatan bersih ala Netflix */
+.film-card-container::-webkit-scrollbar {
+    display: none; /* Untuk Chrome, Safari, Edge */
 }
 
 .flim-card {
@@ -193,6 +204,7 @@ input::placeholder {
     cursor: pointer;
     transition: transform 0.20s ease;
     box-shadow: 0px 4px 10px rgba(5, 0, 23, 0.9);
+    flex: 0 0 auto; /* PENTING: Mengecilkan atau memaksa poster agar tidak ikut menyusut ukurannya */
 }
 
 .flim-card:hover {
